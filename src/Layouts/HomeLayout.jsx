@@ -17,7 +17,7 @@ export default function HomeLayout() {
         <nav className='w-11/12 mx-auto'>
                    <Nav></Nav>
         </nav>
-      <main className='flex items-center justify-between  w-11/12 mx-auto'>
+      <main className='flex  justify-between  w-11/12 mx-auto'>
 <section className="left-nav">
     <LeftAside></LeftAside>
 </section>
