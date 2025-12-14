@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router'
+import { Link, NavLink } from 'react-router'
 
 
 export default function Nav() {
@@ -13,7 +13,8 @@ export default function Nav() {
 </div>
 <div className="login-btn flex items-center justify-center gap-5">
     <img src="/src/assets/user.png" alt="" />
-    <button class="btn btn-outline btn-primary">login</button>
+  
+  <Link to={"/auth/login"}> <button class="btn btn-outline btn-primary">login</button></Link>  
 </div>
     </section>
   )

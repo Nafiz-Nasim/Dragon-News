@@ -8,6 +8,9 @@ import Error from "../Pages/Error";
 import Category from "../Pages/Category";
 import HomeLayout from "../Layouts/HomeLayout";
 import CategoryNews from "../Pages/CategoryNews";
+import AuthLayout from "../Layouts/AuthLayout";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 export const router = createBrowserRouter([
   {
@@ -26,4 +29,18 @@ export const router = createBrowserRouter([
     }
    ]
   },
+  {
+    path:"/auth",
+    Component:AuthLayout,
+    children:[{
+
+      path:"/auth/login",
+      Component:Login,
+    },
+    {
+      path:"/auth/register",
+      Component:Register,
+    }
+  ]
+  }
 ]);
